@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-box">
+        <h2 style="text-align: center; color: var(--gold)">THANH TOÁN</h2>
+        <div class="form-group">
+            <input type="text" placeholder="Họ tên người nhận">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Địa chỉ giao hàng">
+        </div>
+        <button class="btn-primary" onclick="processPayment()">XÁC NHẬN ĐƠN HÀNG</button>
+        <button onclick="history.back()" style="width:100%; margin-top:10px; background:none; border:none; color:white; cursor:pointer">Quay lại</button>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>VỀ LUXURY</h3>
+                <p>Hệ thống thời trang cao cấp hàng đầu Việt Nam. Nơi khẳng định đẳng cấp phái mạnh.</p>
+            </div>
+            <div class="footer-col">
+                <h3>LIÊN HỆ</h3>
+                <p>📍 Địa chỉ: 123 Phố Huế, Hà Nội</p>
+                <p>📞 Hotline: 0912.345.678</p>
+                <p>📧 Email: support@luxury.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>THEO DÕI</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Luxury Shop. All rights reserved.</p>
+        </div>
+    </footer>
+        <script src="js/script.js"></script>
+    <script>
+        updateHeader();
+        renderProducts('all'); // Mặc định hiện tất cả
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

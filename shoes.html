@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giày Nam - Luxury Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo" onclick="location.href='index.html'">LUXURY</div>
+            <nav id="main-nav"></nav>
+        </div>
+        </header>
+
+    <div class="sub-header">
+        <div class="sub-header-container">
+            <div class="sub-item" onclick="location.href='index.html'"><i class="fa-solid fa-fire"></i> Sản phẩm Hot</div>
+            <div class="sub-item" onclick="location.href='shoes.html'" style="color:var(--gold)"><i class="fa-solid fa-shoe-prints"></i> Giày Nam Cao Cấp</div>
+            <div class="sub-item" onclick="location.href='shirts.html'"><i class="fa-solid fa-shirt"></i> Thời Trang Áo</div>
+            <div class="sub-item" onclick="location.href='pants.html'"><i class="fa-solid fa-user-tie"></i> Quần Âu & Jeans</div>
+            <div class="sub-item" onclick="location.href='accessories.html'"><i class="fa-solid fa-gem"></i> Phụ Kiện</div>
+        </div>
+    </div>
+
+    <div class="main-layout">
+        <div class="sidebar">
+            <h3><i class="fa-solid fa-filter"></i> BỘ LỌC GIÀY</h3>
+            
+            <div class="filter-group">
+                <h4>LOẠI GIÀY</h4>
+                <label class="filter-option">
+                    <input type="radio" name="filter" onclick="renderPageWithFilter('shoes', 'all')" checked> Tất cả
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="filter" onclick="renderPageWithFilter('shoes', 'thethao')"> Giày Thể thao
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="filter" onclick="renderPageWithFilter('shoes', 'da')"> Giày Tây / Da
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="filter" onclick="renderPageWithFilter('shoes', 'boot')"> Boots
+                </label>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div class="product-grid" id="product-grid"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>VỀ LUXURY</h3>
+                <p>Hệ thống thời trang cao cấp hàng đầu Việt Nam. Nơi khẳng định đẳng cấp phái mạnh.</p>
+            </div>
+            <div class="footer-col">
+                <h3>LIÊN HỆ</h3>
+                <p>📍 Địa chỉ: 123 Phố Huế, Hà Nội</p>
+                <p>📞 Hotline: 0912.345.678</p>
+                <p>📧 Email: support@luxury.com</p>
+            </div>
+            <div class="footer-col">
+                <h3>THEO DÕI</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Luxury Shop. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        updateHeader();
+        renderPageWithFilter('shoes', 'all'); // Mặc định hiện tất cả giày
+    </script>
+</body>
+</html>
